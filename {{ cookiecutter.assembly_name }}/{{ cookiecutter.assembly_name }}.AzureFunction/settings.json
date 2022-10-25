@@ -1,0 +1,28 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet"
+  },
+  "ConnectionStrings": {
+    "{{ cookiecutter.assembly_name }}ConnectionString": "Server=(localdb)\\MSSQLLocalDB;Database=demo_db;Trusted_Connection=True;MultipleActiveResultSets=true",
+    "{{ cookiecutter.assembly_name }}IdentityConnectionString": "Server=(localdb)\\MSSQLLocalDB;Database=demo_identity_db;Trusted_Connection=True;"
+  },
+  "EmailSettings": {
+    "ApiKey": "SENDGRID_KEY_HERE",
+    "FromName": "Email From Your Organization",
+    "FromAddress": "noreply@yourorganization.com"
+  },
+  "JwtSettings": {
+    "Key": "84322CFB66934ECC86D547C5CF4F2EFC",
+    "Issuer": "{{ cookiecutter.assembly_name }}",
+    "Audience": "{{ cookiecutter.assembly_name }}User",
+    "DurationInMinutes": 60
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  }
+}

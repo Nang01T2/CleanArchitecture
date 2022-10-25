@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "{{ cookiecutter.assembly_name }}.AzureFunction": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7009",
+      "launchBrowser": false
+    }
+  }
+}
